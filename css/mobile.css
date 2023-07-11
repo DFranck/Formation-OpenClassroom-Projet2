@@ -1,0 +1,120 @@
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+  /* ... */
+  .main-container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    height: 115px;
+  }
+
+  .logo-container {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo-container img {
+    height: 30%;
+  }
+  .menu {
+    display: block;
+    width: 100%;
+  }
+  .menu ul {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 0;
+  }
+  .menu ul li {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid var(--main-color);
+    padding-bottom: 15px;
+  }
+  .menu ul a {
+    text-align: center;
+  }
+  .menu ul :nth-child(2):not(:hover) {
+    border-bottom: 2px solid transparent;
+    border-top: none;
+  }
+  .menu ul :nth-child(2) :not(:hover) {
+    color: black;
+  }
+  .intro {
+    width: 80%;
+    margin: 80px auto 0;
+  }
+  .intro .intro-search form {
+    max-width: 100%;
+  }
+  .intro .intro-search input {
+    max-width: 50%;
+  }
+  .intro .intro-search button {
+    width: 49px;
+    border-radius: 15px;
+  }
+  .intro .intro-search button span {
+    display: none;
+  }
+  .intro .intro-search button i {
+    display: block;
+    color: white;
+  }
+  .intro .intro-filter h2 {
+    display: block;
+    width: 100%;
+  }
+  .intro .intro-filter {
+    flex-wrap: wrap;
+  }
+  .intro .intro-filter button {
+    width: 45%;
+    justify-content: center;
+    font-size: 0.875rem;
+  }
+  .hebergements-and-populaires {
+    flex-wrap: wrap-reverse;
+  }
+  .hebergements-and-populaires section {
+    border-radius: 0;
+  }
+  .populaires {
+    margin-top: 0;
+  }
+  .populaires-cards {
+    flex-direction: column;
+  }
+  .populaires-cards a {
+    width: 100%;
+  }
+  #hebergements {
+    background: white;
+  }
+
+  .hebergements-cards {
+    flex-direction: column;
+  }
+
+  .hebergements-cards .card {
+    width: 100%;
+  }
+  .activites .activites-cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .activites .activites-cards .card {
+    width: 100%;
+  }
+  footer {
+    height: 100%;
+    grid-template-columns: 1fr;
+  }
+}
