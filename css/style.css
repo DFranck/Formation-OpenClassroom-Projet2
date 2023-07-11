@@ -153,7 +153,7 @@ nav {
   border-radius: 0 15px 15px 0;
   font-weight: bold;
 }
-.intro .intro-search button span {
+.intro .intro-search button .button-txt {
   color: white;
 }
 
@@ -384,7 +384,8 @@ nav {
 
 footer {
   background: var(--main-bg-color);
-  height: 163px;
+  min-height: 163px;
+  height: fit-content;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   font-size: 1rem;
@@ -510,10 +511,7 @@ footer li {
   }
   .intro {
     width: 80%;
-    margin: 40px auto;
-  }
-  .intro .intro-search {
-    margin: 0 auto;
+    margin: 40px auto 0;
   }
   .intro .intro-search form {
     max-width: 100%;
@@ -549,6 +547,9 @@ footer li {
   }
   .hebergements-and-populaires section {
     border-radius: 0;
+  }
+  .populaires {
+    margin-top: 0;
   }
   .populaires-cards {
     flex-direction: column;
