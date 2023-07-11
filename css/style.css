@@ -66,8 +66,11 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: end;
+  height: 100%;
 }
 .menu ul li a {
+  padding-top: 20px;
+  height: 100%;
   position: relative;
   color: var(--main-color);
 }
@@ -398,7 +401,7 @@ footer li {
 .footer {
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 20px 20px 0 20px;
   gap: 15px;
 }
 /* Le code ci-dessous correspond à la version responsive uniquement */
