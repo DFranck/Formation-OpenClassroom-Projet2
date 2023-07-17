@@ -21,19 +21,19 @@
   </head>
 
   <body>
-    <nav>
-      <div class="logo-container">
-        <img src="./images/logo/Booki.png" alt="Logo Booki" />
-      </div>
-      <div class="menu">
-        <ul>
-          <li><a href="#hebergements">Hébergements</a></li>
-          <li><a href="#activites">Activités</a></li>
-        </ul>
-      </div>
-    </nav>
     <div class="main-container">
       <header>
+        <nav>
+          <div class="logo-container">
+            <img src="./images/logo/Booki.png" alt="Logo Booki" />
+          </div>
+          <div class="menu">
+            <ul>
+              <li><a href="#hebergements">Hébergements</a></li>
+              <li><a href="#activites">Activités</a></li>
+            </ul>
+          </div>
+        </nav>
         <div class="intro">
           <div class="intro-title">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
@@ -44,7 +44,12 @@
               <label for="ville"
                 ><i class="fa-solid fa-location-dot"></i
               ></label>
-              <input type="text" name="ville" id="ville" />
+              <input
+                type="text"
+                name="ville"
+                id="ville"
+                placeholder="Marseille, France"
+              />
               <button type="submit">
                 <span class="button-txt">Rechercher</span>
                 <i class="fa-sharp fa-solid fa-magnifying-glass search"></i>
